@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz | SocialGuard</title>
+
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <h2>🛡️ SocialGuard</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="safety.html">Safety</a>
+            <a href="digital-footprint.html">Digital Footprint</a>
+            <a href="risks.html">Risks</a>
+            <a href="tips.html">Tips</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <button onclick="toggleMenu()">☰</button>
+
+    </header>
+
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu">
+
+        <a href="index.html">Home</a>
+        <a href="safety.html">Safety</a>
+        <a href="digital-footprint.html">Digital Footprint</a>
+        <a href="risks.html">Risks</a>
+        <a href="tips.html">Tips</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="about.html">About</a>
+
+    </div>
+
+
+    <!-- Heading -->
+    <section class="heading">
+
+        <h1>Social Media Safety Quiz</h1>
+
+        <p>Test your knowledge about online safety and digital footprints.</p>
+
+    </section>
+
+
+    <!-- Quiz -->
+    <section class="quiz">
+
+        <!-- Question 1 -->
+        <div class="question">
+
+            <h3>
+                1. You receive a message saying your social media account
+                will be deleted unless you click a link and login. What is
+                the safest action?
+            </h3>
+
+            <label>
+                <input type="radio" name="q1" value="login">
+                Click the link and login quickly
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="no">
+                Do not click the link and verify the message through the official app
+            </label>
+
+        </div>
+
+
+        <!-- Question 2 -->
+        <div class="question">
+
+            <h3>
+                2. Which action creates an active digital footprint?
+            </h3>
+
+            <label>
+                <input type="radio" name="q2" value="avoid">
+                Writing and publishing a public comment
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="browser">
+                A website automatically recording your visit
+            </label>
+
+        </div>
+
+
+        <!-- Question 3 -->
+        <div class="question">
+
+            <h3>
+                3. You use the same password for social media and email.
+                Your social media account gets hacked. What is the biggest
+                security risk?
+            </h3>
+
+            <label>
+                <input type="radio" name="q3" value="yes">
+                The attacker may try the same password on your other accounts
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="no">
+                Nothing, because every account is automatically protected
+            </label>
+
+        </div>
+
+
+        <!-- Question 4 -->
+        <div class="question">
+
+            <h3>
+                4. Which example is most likely to be part of your passive
+                digital footprint?
+            </h3>
+
+            <label>
+                <input type="radio" name="q4" value="online">
+                A website collecting information about your browsing activity
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="shoe">
+                A photo you intentionally upload to your profile
+            </label>
+
+        </div>
+
+
+        <!-- Question 5 -->
+        <div class="question">
+
+            <h3>
+                5. Someone creates a fake profile using your photo and
+                starts sending messages to others. What should you do first?
+            </h3>
+
+            <label>
+                <input type="radio" name="q5" value="report">
+                Save evidence, report the fake account and block it
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="password">
+                Give the person your password and ask them to remove it
+            </label>
+
+        </div>
+
+
+        <!-- Submit -->
+        <button class="submit" onclick="checkQuiz()">
+            Submit Quiz
+        </button>
+
+        <p id="result"></p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>🛡️ SocialGuard</h3>
+
+        <p>Stay Safe. Stay Smart.</p>
+
+        <p>© 2026 SocialGuard</p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
