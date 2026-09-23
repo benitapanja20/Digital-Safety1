@@ -1,0 +1,276 @@
+/* Digital Footprint Page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f8f6;
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Navbar */
+
+.navbar {
+    background: white;
+    padding: 18px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar h2 {
+    color: #16834b;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav a {
+    color: #333;
+}
+
+.navbar nav a:hover {
+    color: #16834b;
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: #16834b;
+    color: white;
+    padding: 8px 12px;
+    font-size: 18px;
+}
+
+
+/* Mobile Menu */
+
+.mobile-menu {
+    display: none;
+}
+
+
+/* Heading */
+
+.heading {
+    text-align: center;
+    padding: 65px 20px;
+    background: #e5f5ec;
+}
+
+.heading h1 {
+    color: #16834b;
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.heading p {
+    font-size: 17px;
+}
+
+
+/* Common Section */
+
+.section {
+    padding: 50px 7%;
+    background: white;
+}
+
+.section.light {
+    background: #eaf6ef;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #163d2c;
+}
+
+.section > p {
+    max-width: 850px;
+    margin: 0 auto 30px;
+    text-align: center;
+    color: #555;
+}
+
+
+/* Cards */
+
+.cards {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #f5f8f6;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #16834b;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+}
+
+
+/* List */
+
+.list {
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.list p {
+    background: #f5f8f6;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+
+/* Think */
+
+.think {
+    padding: 55px 7%;
+    background: #123c2a;
+    color: white;
+    text-align: center;
+}
+
+.think h2 {
+    margin-bottom: 15px;
+}
+
+.think > p {
+    max-width: 750px;
+    margin: auto;
+}
+
+.questions {
+    max-width: 900px;
+    margin: 30px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.questions p {
+    padding: 15px;
+    background: #1d4d38;
+    border-radius: 6px;
+}
+
+
+/* Bottom */
+
+.bottom {
+    text-align: center;
+    padding: 55px 20px;
+    background: #e5f5ec;
+}
+
+.bottom h2 {
+    color: #123c2a;
+    margin-bottom: 10px;
+}
+
+.bottom p {
+    margin-bottom: 20px;
+}
+
+.bottom a {
+    display: inline-block;
+    background: #16834b;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #222;
+    color: white;
+}
+
+footer p {
+    margin-top: 8px;
+    color: #ccc;
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .navbar nav {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .mobile-menu {
+        background: white;
+        padding: 10px 6%;
+    }
+
+    .mobile-menu.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-menu a {
+        padding: 10px 0;
+        color: #333;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .heading h1 {
+        font-size: 32px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .list {
+        grid-template-columns: 1fr;
+    }
+
+    .questions {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 40px 6%;
+    }
+
+}
